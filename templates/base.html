@@ -2,9 +2,9 @@
 
 <!doctype html>
 <html lang="en">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
     <head>
         {% block meta %}
+            <meta http-equiv="X-UA-compatible" content="ie=edge">
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
         {% endblock %}
@@ -19,6 +19,14 @@
         {% block extra_css %}
         {% endblock %}
 
+        {% block corejs %}
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        {% endblock %}
+
+        {% block extra_js %}
+        {% endblock %}
+
         <title>Spartans Gym{% block extra_title %}{% endblock %}</title>
     </head>
     <body>
@@ -28,13 +36,15 @@
             <div class="message-container"></div>
         {% endif %}
 
-        {% block corejs %}
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        {% block page_header %}
         {% endblock %}
 
-        {% block extra_js %}
+        {% block content %}
         {% endblock %}
+
+        {% block postloadjs %}
+        {% endblock %}
+
 
     </body>
 </html>
