@@ -25,7 +25,7 @@
     background-color: #121212;
 }
 
-
+/*----------------------------------------------------------- Fonts */
 
 .montserrat-b {
     font-family: "Montserrat", sans-serif;
@@ -35,9 +35,25 @@
 }
 
 
-
+/*----------------------------------------------------------- Home page */
 
 .main-header {
     padding-top: 10rem;
     padding-left: 2rem;
+}
+
+/*----------------------------------------------------------- Media Queries */
+
+@media (min-width: 576px){
+    .main-header {
+        padding-top: 8rem;
+        padding-left: 5rem;
+    }
+}
+
+@media (min-width: 992px){
+    .main-header {
+        padding-top: 6rem;
+        padding-left: 8rem;
+    }
 }
