@@ -1,5 +1,15 @@
 /*----------------------------------------------------------- Navbar */
 
+.navbar-nav .nav-link {
+    font-family: "Montserrat", sans-serif; /* Change to your desired font family */
+    font-size: 16px; /* Optional: Adjust font size as needed */
+    font-weight: normal; /* Optional: Adjust font weight as needed */
+}
+
+.nav-h {
+    height: 2.5rem;
+}
+
 
 /*----------------------------------------------------------- Colours */
 
@@ -7,6 +17,27 @@
     background-color: #C90404;
 }
 
+.drk-red-bg {
+    background-color: #910F06;
+}
+
 .black-bg {
     background-color: #121212;
+}
+
+
+
+.montserrat-b {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+.main-header {
+    padding-top: 10rem;
+    padding-left: 2rem;
 }
