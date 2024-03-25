@@ -3,7 +3,7 @@
 .navbar-nav .nav-link {
     font-family: "Montserrat", sans-serif; /* Change to your desired font family */
     font-size: 16px; /* Optional: Adjust font size as needed */
-    font-weight: normal; /* Optional: Adjust font weight as needed */
+    font-weight: 700; /* Optional: Adjust font weight as needed */
 }
 
 .nav-h {
@@ -40,6 +40,11 @@
 .main-header {
     padding-top: 10rem;
     padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.main-card {
+    padding: 1rem;
 }
 
 /*----------------------------------------------------------- Media Queries */
