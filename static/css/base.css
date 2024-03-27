@@ -10,6 +10,10 @@
     height: 2.5rem;
 }
 
+.btn-nav {
+    border: none;
+}
+
 
 /*----------------------------------------------------------- Colours */
 
@@ -26,7 +30,7 @@
 }
 
 .black-bg {
-    background-color: #121212;
+    background-color: #000000;
 }
 
 .dg-bg {
