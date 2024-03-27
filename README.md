@@ -66,7 +66,7 @@ Below is a grind I have used to check the contrast scores so as to be sure all t
 
 Here are my wireframes that I created at the start of my project and used as the rough template for my site, for mobile, tablet and desktop viewing. 
 
-## The Databse:
+## The Database:
 
 ### The Data Schema: 
 
