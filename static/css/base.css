@@ -10,8 +10,8 @@
     height: 2.5rem;
 }
 
-.m50 {
-    margin-top: 50% !important;
+.ctm {
+    margin-top: 40% !important;
 }
 
 
@@ -46,11 +46,17 @@
     font-style: normal;
 }
 
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*----------------------------------------------------------- Home page */
 
 .main-header {
-    padding-top: 15rem;
+    padding-top: 18rem;
     padding-left: 2rem;
     margin-bottom: 4rem;
 }
@@ -60,7 +66,7 @@
 }
 
 .main-bg {
-    background-image: url(/static/media/site_images/spartans-bg-m.jpg);
+    background-image: url(/static/media/site_images/spartans-ubg-m.jpg);
 }
 
 /*----------------------------------------------------------- Media Queries */
@@ -68,6 +74,7 @@
 @media (min-width: 576px){
     .main-header {
         margin-bottom: 4.2rem;
+        padding-top: 15rem;
         padding-left: 5rem;
     }
 }
