@@ -59,6 +59,10 @@
     padding: 1rem;
 }
 
+.main-bg {
+    background-image: url(/static/media/site_images/spartans-bg-m.jpg);
+}
+
 /*----------------------------------------------------------- Media Queries */
 
 @media (min-width: 576px){
