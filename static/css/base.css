@@ -67,6 +67,7 @@
 
 .main-bg {
     background-image: url(/static/media/site_images/spartans-ubg-m.jpg);
+    background-repeat: no-repeat;
 }
 
 /*----------------------------------------------------------- Media Queries */
@@ -84,5 +85,9 @@
         padding-top: 16rem;
         padding-left: 8rem;
         margin-bottom: 8rem;
+    }
+
+    .main-bg {
+        background-image: url(/static/media/site_images/spartans-d-bg.jpg);
     }
 }

@@ -47,10 +47,10 @@
                     <div class="collapse navbar-collapse justify-content-center red-bg" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-white pt-3" aria-current="page" href="#">HOME</a>
+                                <a class="nav-link text-white pt-3" aria-current="page" href="{% url 'home' %}">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white pt-3" aria-current="page" href="#">CLASSES & GYM</a>
+                                <a class="nav-link text-white pt-3" aria-current="page" href="{% url 'memberships' %}">CLASSES & GYM</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pt-3 text-white" href="#">SIGN UP</a>
@@ -74,7 +74,7 @@
         {% block content %}
         {% endblock %}
 
-        <footer class="footer m50">
+        <footer class="footer ctm">
             <div class="container-fluid drk-red-bg">
                 <div class="row">
                     <div class="col-4">
