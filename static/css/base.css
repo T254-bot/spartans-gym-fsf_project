@@ -11,7 +11,7 @@
 }
 
 .ctm {
-    margin-top: 40% !important;
+    margin-top: 25% !important;
 }
 
 
@@ -33,10 +33,17 @@
     background-color: #000000;
 }
 
+.black-sbg {
+    background-color: rgba(0,0,0,0.3);
+}
+
 .dg-bg {
     background-color: #212121;
 }
 
+.text-shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
 /*----------------------------------------------------------- Fonts */
 
 .montserrat-b {
@@ -80,7 +87,11 @@
     }
 
     .main-bg {
-        background-image: url(/static/media/site_images/spartans-bg-t.jpg);
+        background-image: url(/static/media/site_images/spartans-bg-bt.jpg);
+    }
+
+    .ctm {
+        margin-top: 51% !important;
     }
 }
 
@@ -93,5 +104,9 @@
 
     .main-bg {
         background-image: url(/static/media/site_images/spartans-db-bg.jpg);
+    }
+
+    .ctm {
+        margin-top: 15% !important;
     }
 }
