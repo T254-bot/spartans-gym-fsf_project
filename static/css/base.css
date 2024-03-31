@@ -78,6 +78,10 @@
         padding-top: 15rem;
         padding-left: 5rem;
     }
+
+    .main-bg {
+        background-image: url(/static/media/site_images/spartans-bg-t.jpg);
+    }
 }
 
 @media (min-width: 992px){
