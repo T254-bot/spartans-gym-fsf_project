@@ -1,3 +1,9 @@
+/*----------------------------------------------------------- Misc */
+
+.ctm {
+    margin-top: 25% !important;
+}
+
 /*----------------------------------------------------------- Navbar */
 
 .navbar-nav .nav-link {
@@ -9,11 +15,6 @@
 .nav-h {
     height: 2.5rem;
 }
-
-.ctm {
-    margin-top: 25% !important;
-}
-
 
 /*----------------------------------------------------------- Colours */
 
@@ -41,10 +42,7 @@
     background-color: #212121;
 }
 
-.text-shadow {
-    text-shadow: black 0.1em 0.1em 0.2em;
-}
-/*----------------------------------------------------------- Fonts */
+/*----------------------------------------------------------- Fonts + Text effects */
 
 .montserrat-b {
     font-family: "Montserrat", sans-serif;
@@ -58,6 +56,10 @@
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+}
+
+.text-shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /*----------------------------------------------------------- Home page */
@@ -75,6 +77,12 @@
 .main-bg {
     background-image: url(/static/media/site_images/spartans-ubg-m.jpg);
     background-repeat: no-repeat;
+}
+
+/*----------------------------------------------------------- Memberships page */
+
+.m-top-space {
+    margin-top: 7rem;
 }
 
 /*----------------------------------------------------------- Media Queries */
