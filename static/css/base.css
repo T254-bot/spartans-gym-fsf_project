@@ -4,6 +4,11 @@
     margin-top: 25% !important;
 }
 
+/* creates a custom left margin. Equivalent to bootstrap col-3 + 0.5 of col-1 */
+.custom-offset {
+    margin-left: 8.33333333%;
+}
+
 /*----------------------------------------------------------- Navbar */
 
 .navbar-nav .nav-link {
@@ -101,6 +106,14 @@
     .ctm {
         margin-top: 51% !important;
     }
+
+    .m-top-space {
+        margin-top: 16rem;
+    }
+    
+    .custom-offset {
+        margin-left: 29.166666665%;
+    }
 }
 
 @media (min-width: 992px){
@@ -116,5 +129,11 @@
 
     .ctm {
         margin-top: 15% !important;
+    }
+
+    /* creates a custom left margin. Equivalent to bootstrap col-3 + 0.5 of col-1
+       - resets style for desktop viewing  */
+    .custom-offset {
+        margin-left: 0;
     }
 }
