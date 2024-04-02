@@ -4,7 +4,7 @@
     margin-top: 25% !important;
 }
 
-/* creates a custom left margin. Equivalent to bootstrap col-3 + 0.5 of col-1 */
+/* creates a custom left margin to act as a customizable bootstrap offset property */
 .custom-offset {
     margin-left: 8.33333333%;
 }
