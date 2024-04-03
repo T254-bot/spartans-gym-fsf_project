@@ -7,4 +7,4 @@ class Membership(models.Model):
     length = models.CharField(max_length=50)
     cost = models.CharField(max_length=50, default=1)
     image = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100, default='path/to/my/default/image.jpg')
-    description = models.CharField(max_length=254)
+    description = models.CharField(max_length=1000)
