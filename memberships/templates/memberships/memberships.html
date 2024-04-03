@@ -7,26 +7,15 @@
 
 <div class="container-fluid">
     <div class="row">
+        {% for m in memberships %}
         <div class="col-10 col-md-5 col-lg-4 offset-1 offset-lg-0">
             <div class="card-body text-center p-3 mt-5 dg-bg">
-                <h3 class="card-text text-white mb-3 montserrat-b">CLASS NAME HERE</h3>
+                <h3 class="card-text text-white mb-3 montserrat-b">{{ m.name }}</h3>
                 <img src="../../../static/media/site_images/spartans-bxng-img.jpg" alt="image of punching bags" width="100px" height="75px" class="mb-3">
                 <a href="#" class="btn text-white" style="background-color:#C90404">LEARN MORE ></a>
             </div>
         </div>
-        <div class="col-10 col-md-5 col-lg-4 offset-1 offset-md-0 offset-lg-0">
-            <div class="card-body text-center p-3 mt-5 dg-bg">
-                <h3 class="card-text text-white mb-3 montserrat-b">CLASS NAME HERE</h3>
-                <img src="../../../static/media/site_images/spartans-gym-img.jpg" alt="image of punching bags" width="100px" height="75px" class="mb-3">
-                <a href="#" class="btn text-white" style="background-color:#C90404">LEARN MORE ></a>
-            </div>
-        </div>
-        <div class="col-10 col-md-5 col-lg-4 custom-offset">
-            <div class="card-body text-center p-3 mt-5 dg-bg">
-                <h3 class="card-text text-white mb-3 montserrat-b">CLASS NAME HERE</h3>
-                <a href="#" class="btn text-white" style="background-color:#C90404">BUY NOW! ></a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
