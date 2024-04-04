@@ -66,6 +66,21 @@ Below is a grind I have used to check the contrast scores so as to be sure all t
 
 Here are my wireframes that I created at the start of my project and used as the rough template for my site, for mobile, tablet and desktop viewing. 
 
+* Home Page
+![Home page wireframe](static/media/readme-assets/spartans-h-wf.png)
+
+* Membership page
+![Membership page wireframe](static/media/readme-assets/spartans-m-wf.png)
+
+* Membership details page
+![Membership details page wireframe](static/media/readme-assets/spartans-md-wf.png)
+
+* Form pages
+![Form pages wireframe](static/media/readme-assets/spartans-f-wf.png)
+
+* Profile page 
+![Profile page wireframe](static/media/readme-assets/spartans-p-wf.png)
+
 ## The Database:
 
 ### The Data Schema: 
