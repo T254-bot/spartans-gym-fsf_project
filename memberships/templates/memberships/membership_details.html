@@ -10,9 +10,10 @@
         <div class="col-10">
             <div class="card-body text-center p-3 mt-5 dg-bg">
                 <h2 class="card-text text-white mb-3 montserrat-b">{{ membership.name }}</h2>
-                <p class="card-text text-white mb-3 montserrat">{{ membership.description }}</p>
+                <p class="card-text text-white mb-3 montserrat">{{ membership.id }}</p>
                 <img src="../../../static/media/site_images/spartans-bxng-img.jpg" alt="image of punching bags" width="100px" height="75px" class="mb-3">
-                <a href="#" class="btn text-white montserrat-b" style="background-color:#C90404">></a>
+                <a href="{% url 'memberships' %}" class="btn text-white montserrat-b" style="background-color:#C90404">< BACK</a>
+                <a href="#" class="btn text-white montserrat-b" style="background-color:#C90404">SIGN UP ></a>
             </div>
         </div>
     </div>
