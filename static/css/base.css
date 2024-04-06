@@ -84,10 +84,30 @@
     background-repeat: no-repeat;
 }
 
-/*----------------------------------------------------------- Memberships page */
+/*----------------------------------------------------------- Margins page */
+
+.top-space {
+    margin-top: 1rem;
+}
+
+.btm-space {
+    margin-bottom: 25%;
+}
 
 .m-top-space {
+    margin-top: 8rem;
+}
+
+.m-btm-space {
+    margin-bottom: 25%;
+}
+
+.md-top-space {
     margin-top: 7rem;
+}
+
+.md-btm-space {
+    margin-bottom: 5%;
 }
 
 /*----------------------------------------------------------- Media Queries */
