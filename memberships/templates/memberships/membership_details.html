@@ -7,17 +7,25 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-10">
+        <div class="col-10 mx-auto">
             <div class="card-body text-center p-3 mt-5 dg-bg">
-                <h2 class="card-text text-white mb-3 montserrat-b">{{ membership.name }}</h2>
-                <p class="card-text text-white mb-3 montserrat">{{ membership.id }}</p>
-                <img src="../../../static/media/site_images/spartans-bxng-img.jpg" alt="image of punching bags" width="100px" height="75px" class="mb-3">
-                <a href="{% url 'memberships' %}" class="btn text-white montserrat-b" style="background-color:#C90404">< BACK</a>
-                <a href="#" class="btn text-white montserrat-b" style="background-color:#C90404">SIGN UP ></a>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="card-text text-white mb-5 montserrat-b">{{ membership.name }}</h2>
+                        <p class="card-text text-white my-5 montserrat">{{ membership.description }}</p>
+                        <h3 class="card-text text-white mb-5 montserrat-b">{{ membership.length }}</h3>
+                        <a href="#" class="btn text-white mb-5 montserrat-b" style="background-color:#C90404">SIGN UP {{  membership.cost }} ></a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../../../static/media/site_images/spartans-bxng-img.jpg" alt="image of punching bags" class="img-fluid mb-3">
+                        <a href="{% url 'memberships' %}" class="btn text-white montserrat-b" style="background-color:#C90404">< BACK</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 {% endblock %}
