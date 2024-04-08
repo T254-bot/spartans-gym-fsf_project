@@ -4,8 +4,8 @@
     * [Target Audiences](#target-audiences)
     * [Color Scheme](#color-scheme)
     * [Wireframes](#wireframes)
-    *[The Databse](#the-database)
-3. [Features](#features)
+    * [The Database](#the-database)
+3. * [Features](#features)
     * [Existing Features](#existing-features)
     * [Future Updates](#future-updates)
 4. [Testing](#testing)
@@ -83,15 +83,33 @@ Here are my wireframes that I created at the start of my project and used as the
 
 ## The Database:
 
-### The Data Schema: 
+My database ended up being very simplistic given how little data is required for the site. There are three Membership objects within created from the django model written in the required models.py file. Each of those objects contain the necessary data for the 3 options for classes/subscriptions. When a user selects and pays for one of the memberships, the currently logged in users object will grab the id from the chosen membership and place it into a list within the user object. By checking what numbers exist in said list, Django then knows what to display on the users Profile page. The project is currently in development at the time of writing this and any changes to this will be documented below. But for now this is the plan.
 
-![screenshot]()
+### The Data Schema:
+
+![Data schema screenshot](static/media/readme-assets/spartans-ds.png)
 
 # Features
 
 Below you will find a list of the features currently found on the site.
 
 ## Existing Features:
+
+### Navbar and Footer:
+
+* Navbar
+
+The site features a simple navbar as the point of navigation for users finding their way through the site. Built from the template found in bootstraps docs, the nav bar is fully responsive on all pages. On mobile and tablet screens, the text links on the navbar will be replaced by a toggle button which triggers a dropdown menu. The toggle icon is 3 horizontal lines to be consistent with current convention.
+
+![Navbar screenshot](static/media/readme-assets/spartans-nav.png)
+
+![Mobile navbar screenshot](static/media/readme-assets/spartans-m-nav.png)
+
+* Footer
+
+Also consistent throughout the site is the footer. The footer is very basic and contains the gyms email address for contact, that users can copy. And links to social media sites (that will just take you to the home page of each respective app/site).
+
+![Footer screenshot](static/media/readme-assets/spartans-footer.png)
 
 
 ## Future Updates
