@@ -14,11 +14,24 @@
                         <h2 class="card-text text-white mb-5 montserrat-b">{{ membership.name }}</h2>
                         <p class="card-text text-white my-5 montserrat">{{ membership.description }}</p>
                         <h3 class="card-text text-white mb-5 montserrat-b">{{ membership.length }}</h3>
-                        <stripe-buy-button
-                        buy-button-id="buy_btn_1P45hwFBAbixHtgviuKRLqhO"
-                        publishable-key="pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wMTIPUquj8celD69KpJ0nu1JGLljO5qnToCBaf8G00iFnOKY77"
-                        >
-                        </stripe-buy-button>
+                        {% if membership.id == 1 %}
+                            <stripe-buy-button
+                            buy-button-id="buy_btn_1P45hwFBAbixHtgviuKRLqhO"
+                            publishable-key="pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wMTIPUquj8celD69KpJ0nu1JGLljO5qnToCBaf8G00iFnOKY77">
+                            </stripe-buy-button>
+                        {% endif %}
+                        {% if membership.id == 2 %}
+                            <stripe-buy-button
+                            buy-button-id="buy_btn_1P45t5FBAbixHtgvQ6NcgHj3"
+                            publishable-key="pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wMTIPUquj8celD69KpJ0nu1JGLljO5qnToCBaf8G00iFnOKY77">
+                            </stripe-buy-button>
+                        {% endif %}
+                        {% if membership.id == 3 %}
+                            <stripe-buy-button
+                            buy-button-id="buy_btn_1P45zrFBAbixHtgvJuWWSV5n"
+                            publishable-key="pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wMTIPUquj8celD69KpJ0nu1JGLljO5qnToCBaf8G00iFnOKY77">
+                            </stripe-buy-button>
+                        {% endif %}
                     </div>
                     <div class="col-md-6">
                         <img src="../../../static/media/site_images/spartans-bxng-img.jpg" alt="image of punching bags" class="img-fluid mb-3">
