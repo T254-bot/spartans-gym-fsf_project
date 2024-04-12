@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Membership
+import stripe
 
 # Create your views here.
 
@@ -15,7 +16,7 @@ def all_memberships(request):
 
 
 def membership_details(request, membership_id):
-    """A view display the details page for the selected membership"""
+    """A view display the details page for the selected membership and allow the user to purchase membership"""
 
     membership = get_object_or_404(Membership, pk=membership_id)
 
