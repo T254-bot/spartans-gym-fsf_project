@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from .models import Membership
 from django.conf import settings
 import stripe
-stripe.api_key = setting.STRIPE_SECRET_KEY
 
 # Create your views here.
 
