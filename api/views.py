@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import os
 import json
+import stripe
 from django.http import HttpResponse
 from django.conf import settings
 if os.path.exists("env.py"):
@@ -10,7 +11,7 @@ if os.path.exists("env.py"):
 stripe.api_key = os.environ.get("STRIPE_SK")
 
 
-@csrf_exempt
+
 def my_webhook_view(request):
   payload = request.body
   event = None
