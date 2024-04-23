@@ -85,6 +85,8 @@ Here are my wireframes that I created at the start of my project and used as the
 
 My database ended up being very simplistic given how little data is required for the site. There are three Membership objects within created from the django model written in the required models.py file. Each of those objects contain the necessary data for the 3 options for classes/subscriptions. When a user selects and pays for one of the memberships, the currently logged in users object will grab the id from the chosen membership and place it into a list within the user object. By checking what numbers exist in said list, Django then knows what to display on the users Profile page. The project is currently in development at the time of writing this and any changes to this will be documented below. But for now this is the plan.
 
+The only CRUD actions accessible to the user are with the users profile itself. As given the nature of the site, it is not possible to allow them to create anything else as the only other data is static and should not be altered.
+
 ### The Data Schema:
 
 ![Data schema screenshot](static/media/readme-assets/spartans-ds.png)
@@ -156,6 +158,8 @@ I began testing the responsiveness of the site firstly by switching through diff
 ## The User Stories:
 
 ## Bug Report:
+
+* The custom background images do not fill the entire screen on some devices. This is due to having set sizes based off of average screen sizes, and also using a div to separate the footer from main content on pages with less content. Which then causes the footer to go beyond the bottom of the image. This is something I am trying to fix but given time constraints I am unsure if I will get them all.
 
 # Deployment
 
