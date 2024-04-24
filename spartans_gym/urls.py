@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('memberships/', include('memberships.urls')),
     path('webhook/', include('api.urls')),
+    path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
