@@ -113,6 +113,14 @@ Also consistent throughout the site is the footer. The footer is very basic and 
 
 ![Footer screenshot](static/media/readme-assets/spartans-footer.png)
 
+* Home page
+
+* Membership page
+
+* Membership details page
+
+* Profile page 
+
 
 ## Future Updates
 
@@ -160,6 +168,8 @@ I began testing the responsiveness of the site firstly by switching through diff
 ## Bug Report:
 
 * The custom background images do not fill the entire screen on some devices. This is due to having set sizes based off of average screen sizes, and also using a div to separate the footer from main content on pages with less content. Which then causes the footer to go beyond the bottom of the image. This is something I am trying to fix but given time constraints I am unsure if I will get them all.
+
+* Due to the outdated course material as well as the code along project not working correctly, I have used a different version of stripe payments than is used in the course. It has made acheiving a working payment system incredibly easy. However, getting the required functionality (i.e: A message to display to the user and having the membership show up in the user object) has been much more difficult this way. The bug here is that to redirect back to my site after completing payment, currently opens the site in the same window as the payment screen. This is something I am hopeful to resolve but given time constraints I doubt I will.
 
 # Deployment
 
