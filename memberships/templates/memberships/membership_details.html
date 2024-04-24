@@ -16,7 +16,6 @@
                         <h3 class="card-text text-white mb-5 montserrat-b">{{ membership.length }}</h3>
                         <stripe-buy-button
                         buy-button-id="{{ membership.stripe_price_id }}"
-                        id="buy-btn"
                         publishable-key="{{ pkey }}"
                         receipt_email=""
                         customer-email="">
