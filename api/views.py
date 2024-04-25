@@ -5,6 +5,8 @@ import stripe
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from django.conf import settings
+from django.contrib.auth.models import User
+from memberships.models import Membership
 if os.path.exists("env.py"):
     import env
 
@@ -36,6 +38,10 @@ def my_webhook_view(request):
   # ... handle other event types
   else:
     print('Unhandled event type {}'.format(event.type))
+
+  #product = Membership.objects.get(price=2000)
+  #user = User.objects.get(email=tyler)
+  #subscription.objects.filter(user=request.session.user)
 
   return HttpResponse(status=200)
 
