@@ -110,6 +110,10 @@
     margin-bottom: 5%;
 }
 
+.su-btm-space {
+    margin-bottom: 5%;
+}
+
 /*----------------------------------------------------------- Media Queries */
 
 @media (min-width: 576px){
@@ -160,6 +164,10 @@
     .md-btm-space {
         margin-bottom: 45%;
     }
+
+    .su-btm-space {
+        margin-bottom: 40%;
+    }
 }
 
 @media (min-width: 992px){
@@ -194,6 +202,10 @@
     }
 
     .md-btm-space {
+        margin-bottom: 20%;
+    }
+
+    .su-btm-space {
         margin-bottom: 20%;
     }
 }
