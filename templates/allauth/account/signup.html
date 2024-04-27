@@ -5,23 +5,49 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Up" %}</h2>
-<hr>
 
-<p>{% blocktrans %}If you already have an account, please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<!-- Div to create top space on page -->
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  <p>{{ form.email }}</p>
-  <p>{{ form.username }}</p>
-  <p>{{ form.password1 }}</p>
-  <p>{{ form.password2 }}</p>
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Login</a>
-  <button type="submit">{% trans "Sign Up" %}</button>
-</form>
+<div class="container md-top-space"></div>
+
+<!-- Page Header -->
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col text-shadow text-center">
+        <h1 class="montserrat-b text-white ">{% trans "Sign Up" %}</h1>
+      </div>
+  </div>
+</div>
+
+<!-- Sign up form -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10 col-md-6 mx-auto">
+        <div class="card-body text-center p-3 mt-5 dg-bg">
+          <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+            <!-- Form Inputs -->
+            {% csrf_token %}
+            <p class="card-text text-white my-5 montserrat">{{ form.email }}</p>
+            <p class="card-text text-white my-5 montserrat">{{ form.username }}</p>
+            <p class="card-text text-white my-5 montserrat">{{ form.password1 }}</p>
+            <p class="card-text text-white my-5 montserrat">{{ form.password2 }}</p>
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <!-- Form buttons/links -->
+            <a class=" me-4 btn btn-outline-white text-red rounded-3" style="background-color:#fafafa" href="{% url 'home' %}">Home</a>
+            <button class=" ms-4 rounded-3 text-white montserrat-b" type="submit" style="background-color:#C90404">{% trans "Sign Up" %}</button>
+            <p class="montserrat text-white mt-5">{% blocktrans %}If you already have an account, please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Div to create bottom space on page -->
+
+<div class="container m-btm-space"></div>
 
 {% endblock %}
