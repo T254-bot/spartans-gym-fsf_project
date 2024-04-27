@@ -9,16 +9,17 @@
 
 <div class="container md-top-space"></div>
 
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
-<hr>
-
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col text-shadow text-center">
+        <h1 class="montserrat-b text-white ">{% trans "Sign In" %}</h1>
+      </div>
+  </div>
+</div>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col mx-auto">
+        <div class="col-10 col-md-6 mx-auto">
             <div class="card-body text-center p-3 mt-5 dg-bg">
               <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
@@ -35,11 +36,13 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <a class="btn btn-outline-white text-white rounded-0" href="{% url 'home' %}">Home</a>
-                <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+                <a class="btn btn-outline-white text-red rounded-3" style="background-color:#fafafa" href="{% url 'home' %}">Home</a>
+                <button class="primaryAction rounded-3 text-white montserrat-b" type="submit" style="background-color:#C90404">{% trans "Sign In" %}</button>
                 <p class="mt-2">
                   <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
                 </p>
+                <p class="montserrat text-white">{% blocktrans %}If you have not created an account yet, please
+                  <a href="{{ signup_url }}">sign up</a>{% endblocktrans %}</p>
               </form>
             </div>
         </div>
