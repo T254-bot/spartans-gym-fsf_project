@@ -55,14 +55,17 @@
                             </li>
                             {% if user.is_authenticated %}
                                 <li class="nav-item">
+                                    <a class="nav-link pt-3 text-white" aria-current="page" href="{% url 'profile' %}">PROFILE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pt-3 text-white" aria-current="page" href="{% url 'account_logout' %}">LOGOUT</a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item">
                                     <a class="nav-link pt-3 text-white" aria-current="page" href="{% url 'account_signup' %}">SIGN UP</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link pt-3 text-white" aria-current="page" href="{% url 'account_login' %}">LOGIN</a>
-                                </li>
-                            {% else %}
-                                <li class="nav-item">
-                                    <a class="nav-link pt-3 text-white" aria-current="page" href="{% url 'profile' %}">PROFILE</a>
                                 </li>
                             {% endif %}
                         </ul>
