@@ -1,15 +1,28 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% load i18n %}
+{% load account socialaccount %}
+{% block head_title %}{% trans "Profile" %}{% endblock %}
+
 {% block content %}
 
 <div class="container md-top-space"></div>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-10 mx-auto">
-            <div class="card-body text-center p-3 mt-5 dg-bg">
-                
+        <div class="col text-shadow text-center">
+            <h1 class="montserrat-b text-white ">{% trans "Your Profile" %}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-10 col-md-8 mx-auto">
+            <div class="card-body text-white p-3 mt-5 dg-bg">
+                <h2 class="montserrat-b">USERNAME</h2>
+                <h3 class="montserrat-b">EMAIL ADDRESS</h3>
             </div>
         </div>
     </div>
