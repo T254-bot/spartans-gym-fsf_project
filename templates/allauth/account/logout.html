@@ -5,19 +5,34 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
-<hr>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+<!-- Div to create top space on page -->
+
+<div class="container m-top-space"></div>
+
+<!-- Log out form -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10 col-md-6 mx-auto">
+      <div class="card-body text-center p-3 mt-5 dg-bg">
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          <p class="text-white montserrat so-font">{% trans 'Are you sure you want to sign out?' %}</p>
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <a class="btn btn-outline-black me-3 rounded-3 montserrat-b" style="background-color:#fafafa"  href="{% url 'home' %}">Cancel</a>
+          <button class=" ms-3 rounded-3 text-white montserrat-b" type="submit" style="background-color:#C90404">{% trans 'Sign Out' %}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Div to create bottom space on page -->
+
+<div class="container so-btm-space"></div>
 
 
 {% endblock %}

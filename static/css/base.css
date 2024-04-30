@@ -63,6 +63,10 @@
     font-style: normal;
 }
 
+.so-font {
+    font-size: 100px;
+}
+
 .text-shadow {
     text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -112,6 +116,14 @@
 
 .su-btm-space {
     margin-bottom: 5%;
+}
+
+.so-top-space {
+    margin-top: 30%;
+}
+
+.so-btm-space {
+    margin-bottom: 55%;
 }
 
 /*----------------------------------------------------------- Media Queries */
