@@ -21,8 +21,8 @@
     <div class="row">
         <div class="col-10 col-md-8 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
-                <h2 class="montserrat-b">USERNAME</h2>
-                <h3 class="montserrat-b">EMAIL ADDRESS</h3>
+                <h2 class="montserrat-b mb-5">{{ user.username}}</h2>
+                <h3 class="montserrat-b">{{ user.email }}</h3>
                 <div class="text-center mt-3">
                     <a class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" href="{% url 'home' %}">Change your Details</a>
                 </div>
