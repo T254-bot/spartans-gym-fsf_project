@@ -11,6 +11,17 @@
 
 <div class="container md-top-space"></div>
 
+{% if messages %}
+<div>
+  <strong>Messages:</strong>
+  <ul>
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 <!-- Page Header -->
 
 <div class="container-fluid">
