@@ -90,7 +90,7 @@
 /*----------------------------------------------------------- Margins */
 
 .top-space {
-    margin-top: 1rem;
+    margin-top: 7rem;
 }
 
 .btm-space {
@@ -98,11 +98,11 @@
 }
 
 .m-top-space {
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .m-btm-space {
-    margin-bottom: 25%;
+    margin-bottom: 3rem;
 }
 
 .md-top-space {
@@ -113,8 +113,20 @@
     margin-bottom: 5%;
 }
 
+.su-top-space {
+    margin-top: 4rem;
+}
+
 .su-btm-space {
     margin-bottom: 5%;
+}
+
+.su-top-space {
+    margin-top: 4rem;
+}
+
+.su-btm-space {
+    margin-bottom: 5rem;
 }
 
 .so-top-space {
