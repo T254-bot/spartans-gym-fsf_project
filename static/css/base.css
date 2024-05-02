@@ -121,11 +121,11 @@
     margin-bottom: 5%;
 }
 
-.su-top-space {
+.si-top-space {
     margin-top: 4rem;
 }
 
-.su-btm-space {
+.si-btm-space {
     margin-bottom: 5rem;
 }
 
@@ -203,7 +203,7 @@
     }
 
     .top-space {
-        margin-top: 0rem;
+        margin-top: 3rem;
     }
 
     .btm-space {
