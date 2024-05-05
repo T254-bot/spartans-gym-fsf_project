@@ -90,7 +90,7 @@
 /*----------------------------------------------------------- Margins */
 
 .top-space {
-    margin-top: 7rem;
+    margin-top: 10rem;
 }
 
 .btm-space {
@@ -114,15 +114,15 @@
 }
 
 .su-top-space {
-    margin-top: 4rem;
+    margin-top: 7rem;
 }
 
 .su-btm-space {
-    margin-bottom: 5%;
+    margin-bottom: 6rem;
 }
 
 .si-top-space {
-    margin-top: 4rem;
+    margin-top: 5%;
 }
 
 .si-btm-space {
@@ -164,19 +164,19 @@
     /*------------------------- Margins */
 
     .top-space {
-        margin-top: 1rem;
+        margin-top: 15rem;
     }
 
     .btm-space {
-        margin-bottom: 25%;
+        margin-bottom: 45%;
     }
 
     .m-top-space {
-        margin-top: 18rem;
+        margin-top: 15rem;
     }
 
     .m-btm-space {
-        margin-bottom: 55%;
+        margin-bottom: 50%;
     }
 
     .md-top-space {
@@ -188,7 +188,7 @@
     }
 
     .su-btm-space {
-        margin-bottom: 40%;
+        margin-bottom: 30%;
     }
 }
 
