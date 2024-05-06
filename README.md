@@ -171,6 +171,8 @@ I began testing the responsiveness of the site firstly by switching through diff
 
 * Due to the outdated course material as well as the code along project not working correctly, I have used a different version of stripe payments than is used in the course. It has made acheiving a working payment system incredibly easy. However, getting the required functionality (i.e: A message to display to the user and having the membership show up in the user object) has been much more difficult this way. The bug here is that to redirect back to my site after completing payment, currently opens the site in the same window as the payment screen. This is something I am hopeful to resolve but given time constraints I doubt I will.
 
+* I am currently encountering an error where the divs I am using to space the page content out are not working correctly while on allauth pages.
+
 # Deployment
 
 * The site was deployed to Heroku. The steps to deploy are as follows:
