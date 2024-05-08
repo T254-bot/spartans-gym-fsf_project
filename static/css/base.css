@@ -94,7 +94,7 @@
 }
 
 .btm-space {
-    margin-bottom: 25%;
+    margin-bottom: 12.5rem;
 }
 
 .m-top-space {
@@ -164,11 +164,11 @@
     /*------------------------- Margins */
 
     .top-space {
-        margin-top: 15rem;
+        margin-top: 16rem;
     }
 
     .btm-space {
-        margin-bottom: 45%;
+        margin-bottom: 23.5rem;
     }
 
     .m-top-space {
@@ -187,8 +187,12 @@
         margin-bottom: 45%;
     }
 
+    .su-top-space {
+        margin-top: 12.5rem;
+    }
+
     .su-btm-space {
-        margin-bottom: 30%;
+        margin-bottom: 18rem;
     }
 }
 
