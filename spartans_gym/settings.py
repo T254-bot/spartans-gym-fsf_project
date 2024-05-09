@@ -30,11 +30,9 @@ STRIPE_PUBLIC_KEY = 'pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wM
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-#ALLOWED_HOSTS = ['spartans-django-app-b21fba4983af.herokuapp.com']
-
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['spartans-django-app-b21fba4983af.herokuapp.com']
 
 
 # Application definition
@@ -182,3 +180,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
