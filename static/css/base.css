@@ -90,7 +90,7 @@
 /*----------------------------------------------------------- Margins */
 
 .top-space {
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .btm-space {
@@ -194,6 +194,14 @@
     .su-btm-space {
         margin-bottom: 18rem;
     }
+
+    .si-top-space {
+        margin-top: 15rem;
+    }
+
+    .si-btm-space {
+        margin-bottom: 18rem;
+    }
 }
 
 @media (min-width: 992px){
@@ -207,7 +215,7 @@
     }
 
     .top-space {
-        margin-top: 3rem;
+        margin-top: 10rem;
     }
 
     .btm-space {

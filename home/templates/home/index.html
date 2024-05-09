@@ -3,7 +3,11 @@
 
 {% block content %}
 
+<!-- Div to create top space -->
+
 <div class="container top-space"></div>
+
+<!-- Messages section -->
 
 {% if messages %}
 <div>
@@ -16,6 +20,8 @@
 </div>
 {% endif %}
 
+<!-- Page Header -->
+
 <div class="container-fluid main-header">
     <div class="row">
         <div class="col text-shadow col-lg-6">
@@ -25,6 +31,8 @@
     </div>
 </div>
 
+<!-- Page content -->
+
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-9 col-md-6 col-lg-4 dg-bg">
@@ -33,11 +41,14 @@
                 <p class="card-text text-white mb-4 montserrat">Situated in the heart of Chippenham since 2000, Spartans Gym is the place to be for weight training or a great boxing/kickboxing workout. 
                     Whether you're a beginner or have trained before, we have classes for every level and only want to see you smash your fitness goals!
                 </p>
+<!-- Link to signup page -->
                 <a href="{% url 'account_signup' %}" class="btn text-white montserrat-b" style="background-color:#C90404">Begin your journey</a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Div to create bottom space -->
 
 <div class="container btm-space"></div>
 

@@ -7,6 +7,12 @@
 
 {% block inner_content %}
 
+<!-- Div to create top space on page -->
+
+<div class="container si-top-space"></div>
+
+<!-- Messages section -->
+
 {% if messages %}
 <div>
   <strong>Messages:</strong>
@@ -17,10 +23,6 @@
   </ul>
 </div>
 {% endif %}
-
-<!-- Div to create top space on page -->
-
-<div class="container md-top-space"></div>
 
 <!-- Page Header -->
 
@@ -70,6 +72,6 @@
 
 <!-- Div to create bottom space on page -->
 
-<div class="container md-btm-space"></div>
+<div class="container si-btm-space"></div>
 
 {% endblock %}

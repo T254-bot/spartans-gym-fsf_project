@@ -3,7 +3,11 @@
 
 {% block content %}
 
+<!-- Div to create top space -->
+
 <div class="container md-top-space"></div>
+
+<!-- Section to display selected memberships details  -->
 
 <div class="container-fluid">
     <div class="row">
@@ -14,6 +18,7 @@
                         <h2 class="card-text text-white mb-5 montserrat-b">{{ membership.name }}</h2>
                         <p class="card-text text-white my-5 montserrat">{{ membership.description }}</p>
                         <h3 class="card-text text-white mb-5 montserrat-b">{{ membership.length }}</h3>
+<!-- Buy button/link -->
                         {% if user.is_authenticated %}
                             <stripe-buy-button
                             buy-button-id="{{ membership.stripe_price_id }}"
@@ -26,6 +31,7 @@
                             href="{% url 'account_signup' %}">Sorry, it looks like you need to sign in first</a>
                         {% endif %}
                     </div>
+<!-- Back button -->
                     <div class="col-md-6">
                         <img src="{% static 'media/site_images/spartans-bxng-img.jpg' %}" alt="image of punching bags" class="img-fluid mb-3">
                         <a href="{% url 'memberships' %}" class="btn text-white montserrat-b" style="background-color:#C90404">&lt; BACK</a>
@@ -35,6 +41,8 @@
         </div>
     </div>
 </div>
+
+<!-- Div to create bottom space -->
 
 <div class="container md-btm-space"></div>
 
