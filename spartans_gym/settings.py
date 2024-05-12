@@ -30,7 +30,9 @@ STRIPE_PUBLIC_KEY = 'pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wM
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
+
+DEBUG = True
 
 #ALLOWED_HOSTS = ['spartans-django-app-b21fba4983af.herokuapp.com']
 
