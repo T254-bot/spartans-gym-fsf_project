@@ -28,6 +28,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 STRIPE_PUBLIC_KEY = 'pk_test_51P3KWgFBAbixHtgvNptU7gz5y2N4MnUqD3CUsDfFIl2MQNH7wMTIPUquj8celD69KpJ0nu1JGLljO5qnToCBaf8G00iFnOKY77'
 
+STRIPE_WEBHOOK_SECRET = os.environ.get('STRIPE_WEBHOOK_SECRET')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = 'DEVELOPMENT' in os.environ

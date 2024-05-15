@@ -19,17 +19,25 @@ def my_webhook_view(request):
   payload = request.body
   event = None
 
+  # Verify the signature
   try:
-    event = stripe.Event.construct_from(
-      json.loads(payload), stripe.api_key
-    )
+      event = stripe.Webhook.construct_event(
+          payload, sig_header, settings.STRIPE_WEBHOOK_SECRET
+      )
   except ValueError as e:
-    # Invalid payload
-    return HttpResponse(status=400)
+      # Invalid payload
+      return HttpResponse(status=400)
+  except stripe.error.SignatureVerificationError as e:
+      # Invalid signature
+      return HttpResponse(status=400)
 
   # Handle the event
   if event.type == 'payment_intent.succeeded':
-    payment_intent = event.data.object # contains a stripe.PaymentIntent
+
+    # Extract relevant information from the event
+    amount = event['data']['object']['amount']
+    receipt_email = event['data']['object']['receipt_email']
+    
     print('PaymentIntent was successful!')
     print(event.data.object)
   elif event.type == 'payment_method.attached':
