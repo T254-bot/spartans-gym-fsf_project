@@ -42,7 +42,11 @@
                     Whether you're a beginner or have trained before, we have classes for every level and only want to see you smash your fitness goals!
                 </p>
 <!-- Link to sign up page -->
-                <a href="{% url 'account_signup' %}" class="btn text-white montserrat-b" style="background-color:#C90404">Begin your journey</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'memberships' %}" class="btn text-white montserrat-b" style="background-color:#C90404">Begin your journey</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="btn text-white montserrat-b" style="background-color:#C90404">Begin your journey</a>
+                {% endif %}
             </div>
         </div>
     </div>
