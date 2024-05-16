@@ -21,11 +21,11 @@ def all_memberships(request):
 
 def membership_details(request, membership_id):
     membership = get_object_or_404(Membership, pk=membership_id)
-    pkey = os.environ.get("STRIPE_PK")
+    STRIPE_PK = os.environ.get("STRIPE_PK")
 
     context = {
         'membership': membership,
-        'pkey': pkey,
+        'STRIPE_PK': STRIPE_PK,
     }
 
     return render(request, 'memberships/membership_details.html', context)
