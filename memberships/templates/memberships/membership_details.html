@@ -24,8 +24,8 @@
                             <stripe-buy-button
                             buy-button-id="{{ membership.stripe_price_id }}"
                             publishable-key="{{ STRIPE_PK }}"
-                            receipt_email=""
-                            customer-email="">
+                            receipt_email="{{ user.email }}"
+                            customer-email="{{ user.email }}">
                             </stripe-buy-button>
                         {% else %}
                             <a class="btn btn-outline-white me-4 rounded-3 montserrat-b" style="background-color:#fafafa"
