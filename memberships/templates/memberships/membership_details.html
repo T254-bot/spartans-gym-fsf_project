@@ -18,7 +18,6 @@
                         <h2 class="card-text text-white mb-5 montserrat-b">{{ membership.name }}</h2>
                         <p class="card-text text-white my-5 montserrat">{{ membership.description }}</p>
                         <h3 class="card-text text-white mb-5 montserrat-b">{{ membership.length }}</h3>
-                        <p>"{{ membership.stripe_price_id }}"</p>
 <!-- Buy button/link -->
                         {% if user.is_authenticated %}
                             <stripe-buy-button
