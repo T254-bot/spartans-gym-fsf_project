@@ -23,7 +23,7 @@
                         {% if user.is_authenticated %}
                             <stripe-buy-button
                             buy-button-id="{{ membership.stripe_price_id }}"
-                            publishable-key="{{ pkey }}"
+                            publishable-key="{{ STRIPE_PK }}"
                             receipt_email=""
                             customer-email="">
                             </stripe-buy-button>
