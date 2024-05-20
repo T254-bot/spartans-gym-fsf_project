@@ -47,6 +47,8 @@ def my_webhook_view(request):
     product = Membership.objects.get(stripe_price=amount)
     print(product)
 
+    subscription = Subscription.objects.create(user=user, membership=product)
+
     messages.add_message(request, messages.INFO, "Hello world.")
   elif event.type == 'payment_method.attached':
     payment_method = event.data.object # contains a stripe.PaymentMethod
@@ -55,8 +57,6 @@ def my_webhook_view(request):
   else:
     print('Unhandled event type {}'.format(event.type))
 
-  product = Membership.objects.get(price=2000)
-  user = User.objects.get(email=tyler)
   #subscription.objects.filter(user=request.session.user)
 
   return HttpResponse(status=200)
