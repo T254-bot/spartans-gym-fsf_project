@@ -8,6 +8,7 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.contrib import messages
 from memberships.models import Membership
+from profiles.models import Subscription
 if os.path.exists("env.py"):
     import env
 
