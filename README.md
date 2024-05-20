@@ -24,6 +24,8 @@ Welcome to Spartans Gym - your ultimate destination for fitness excellence. This
 
 ## Disclaimer:
 
+I HAVE RUN OUT OF TIME AND WILL BE CONTINUING ON TO COMPLETE THIS README FILE OVER THE NEXT FEW DAYS
+
 This educational project has been developed with the intention of demonstrating proficiency in full-stack frameworks as part of a course curriculum. It is centered around a real-world location, serving as the subject matter of the website. It is important to note that explicit permission has been obtained from the respective business owner to utilize their establishment as the primary source of information and assets for this website.
 
 # Planning 
@@ -34,23 +36,19 @@ This educational project has been developed with the intention of demonstrating 
 
 * Users already using the gym that have not used the site before.
 
-* Users looking a convenient to update payment details.
+* Users wanting a simple and easy to understand UI.
 
-* Users wanting to find out and potentially sign up to more classes.
-
-* Users wanting a convenient way to cancel their membership.
+* Users wanting to begin a combat sport.
 
 ### User Stories:
 
-* As a someone who regularly uses the gym, I want to be able to find a cheaper way of having access to the gym without paying for a day at a time.
+* As a someone who regularly works out, I want to be able to find a cheaper way of having access to the gym without paying for a day at a time.
 
-* As someone who does not exercise alot, I want to find out what facilities are available to me.
+* As someone who is just getting into exercising regularly, I want to be able to try a gym out before committing to a subscription.
 
-* As someone who trains in combat sports, I want to find a new gym to train at.
+* As someone new to the site, I want to be able to easily create an account and see what membership options are available to me.
 
-* As a gym user who is moving away, I want an easy way of cancelling my membership.
-
-* As someone who does not enjoy weight training, I want to find a different way of working out.
+* As 
 
 ## Color Scheme:
 
@@ -164,6 +162,13 @@ I began testing the responsiveness of the site firstly by switching through diff
 ## Functionality Testing:
 
 ## The User Stories:
+
+* As a someone who regularly uses the gym, I want to be able to find a cheaper way of having access to the gym without paying for a day at a time.
+    * 
+
+* As someone who does not exercise alot, I want to find out what facilities are available to me.
+
+* As someone who does not enjoy weight training, I want to find a different way of working out.
 
 ## Bug Report:
 
