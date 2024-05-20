@@ -25,5 +25,3 @@ def create_or_update_subscription(sender, instance, created, **kwargs):
         Subscription.objects.create(user=instance)
     # Existing users: just save the profile
     instance.subscription.save()
-
-

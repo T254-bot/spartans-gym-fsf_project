@@ -62,18 +62,19 @@
 
 <!-- Section to display users current memberships -->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-10 col-md-8 col-lg-6 mx-auto">
-            <div class="card-body text-white p-3 mt-5 dg-bg">
-                <div class="text-white">
-                    <p class="montserrat-b">Gym Membership</p>
+{% for subscription in subscriptions %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10 col-md-8 col-lg-6 mx-auto">
+                <div class="card-body text-white p-3 mt-5 dg-bg">
+                        <div class="text-white">
+                            <p class="montserrat-b">{{ subscription.membership }}</p>
+                        </div>
                 </div>
-                <h2 class="montserrat-b"></h2>
             </div>
         </div>
     </div>
-</div>
+{% endfor %}
 
 <!-- Div to create bottom space -->
 
