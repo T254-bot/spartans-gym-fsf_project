@@ -10,18 +10,7 @@ class Subscription(models.Model):
     Create a subscription object 
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    membership = models.OneToOneField(Membership, on_delete=models.CASCADE)
+    membership = models.OneToOneField(Membership, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.user.username
-
-
-@receiver(post_save, sender=User)
-def create_or_update_subscription(sender, instance, created, **kwargs):
-    """
-    Create or update the user profile
-    """
-    if created:
-        Subscription.objects.create(user=instance)
-    # Existing users: just save the profile
-    instance.subscription.save()

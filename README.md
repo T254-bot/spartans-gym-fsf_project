@@ -34,11 +34,11 @@ This educational project has been developed with the intention of demonstrating 
 
 * Users looking to begin their fitness journey.
 
-* Users already using the gym that have not used the site before.
+* Users already using the gym.
 
 * Users wanting a simple and easy to understand UI.
 
-* Users wanting to begin a combat sport.
+* Users looking for additional info about the gym.
 
 ### User Stories:
 
