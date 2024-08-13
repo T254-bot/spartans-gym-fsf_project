@@ -24,8 +24,6 @@ Welcome to Spartans Gym - your ultimate destination for fitness excellence. This
 
 ## Disclaimer:
 
-I HAVE RUN OUT OF TIME AND WILL BE CONTINUING ON TO COMPLETE THIS README FILE OVER THE NEXT FEW DAYS
-
 This educational project has been developed with the intention of demonstrating proficiency in full-stack frameworks as part of a course curriculum. It is centered around a real-world location, serving as the subject matter of the website. It is important to note that explicit permission has been obtained from the respective business owner to utilize their establishment as the primary source of information and assets for this website.
 
 # Planning 
@@ -134,10 +132,7 @@ I began testing the responsiveness of the site firstly by switching through diff
 ### I have tried to test the website on as many devices as I can, however, I don't have access to many. here I will include a list of all the devices that I have been to use to test the site:
 * ASUS Zenbook Duo 14 ^
 * Samsung S20 ultra ^
-* Samsung A51
 * IPhone 14
-* IPhone 12
-* IPad Air (4th gen) ^
 
 
 ### Here is a list of the different browsers I have tested the website on and found no obvious faults:
