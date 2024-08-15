@@ -50,10 +50,10 @@ def my_webhook_view(request):
 
     subscription = Subscription.objects.create(user=user, membership=product)
 
-    messages.add_message(request, messages.INFO, "Hello world.")
+    messages.add_message(request, messages.INFO, "Payment was successful.")
   elif event.type == 'payment_method.attached':
     payment_method = event.data.object # contains a stripe.PaymentMethod
-    print('PaymentMethod was attached to a Customer!')
+    print('Payment Method was attached to a Customer!')
   # ... handle other event types
   else:
     print('Unhandled event type {}'.format(event.type))
