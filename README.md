@@ -6,7 +6,11 @@
     * [Wireframes](#wireframes)
     * [The Database](#the-database)
 3. * [Features](#features)
-    * [Existing Features](#existing-features)
+    * [Navbar and Footer](#navbar-and-footer)
+    * [Home Page](#home-page)
+    * [Membership Pages](#membership-pages)
+    * [Login and Sign Up Pages](#login-and-sign-up-pages)
+    * [Profile Page](#profile-page)
     * [Future Updates](#future-updates)
 4. [Testing](#testing)
     * [Responsiveness](#responsiveness-testing)
@@ -36,17 +40,7 @@ This educational project has been developed with the intention of demonstrating 
 
 * Users wanting a simple and easy to understand UI.
 
-* Users looking for additional info about the gym.
-
-### User Stories:
-
-* As a someone who regularly works out, I want to be able to find a cheaper way of having access to the gym without paying for a day at a time.
-
-* As someone who is just getting into exercising regularly, I want to be able to try a gym out before committing to a subscription.
-
-* As someone new to the site, I want to be able to easily create an account and see what membership options are available to me.
-
-* As 
+* 
 
 ## Color Scheme:
 
@@ -91,11 +85,9 @@ The only CRUD actions accessible to the user are with the users profile itself. 
 
 Below you will find a list of the features currently found on the site.
 
-## Existing Features:
+## Navbar and Footer:
 
-### Navbar and Footer:
-
-* Navbar
+### Navbar
 
 The site features a simple navbar as the point of navigation for users finding their way through the site. Built from the template found in bootstraps docs, the nav bar is fully responsive on all pages. On mobile and tablet screens, the text links on the navbar will be replaced by a toggle button which triggers a dropdown menu. The toggle icon is 3 horizontal lines to be consistent with current convention.
 
@@ -103,20 +95,19 @@ The site features a simple navbar as the point of navigation for users finding t
 
 ![Mobile navbar screenshot](static/media/readme-assets/spartans-m-nav.png)
 
-* Footer
+### Footer
 
 Also consistent throughout the site is the footer. The footer is very basic and contains the gyms email address for contact, that users can copy. And links to social media sites (that will just take you to the home page of each respective app/site).
 
 ![Footer screenshot](static/media/readme-assets/spartans-footer.png)
 
-* Home page
+## Home page:
 
-* Membership page
+## Membership pages:
 
-* Membership details page
+* Login / Sign up pages
 
 * Profile page 
-
 
 ## Future Updates
 
@@ -158,12 +149,15 @@ I began testing the responsiveness of the site firstly by switching through diff
 
 ## The User Stories:
 
-* As a someone who regularly uses the gym, I want to be able to find a cheaper way of having access to the gym without paying for a day at a time.
-    * 
+* Users looking to begin their fitness journey.
+    * When landing on the home page, the user is presented with a button with the text "Begin your journey". Upon clicking this button the user is taken to the sign up page, and prompted to create an account. Once the user has signed up they are then able to sign up for a membership.
 
-* As someone who does not exercise alot, I want to find out what facilities are available to me.
+* Users already using the gym.
+    * Users that have been going to the gym before this website was created, can now sign up to an account. Once the user is on the on the profile page, they can sign up for newsletters about current events and changes at the gym. Aswell as now being able to sign up to / renew their memberships.
 
-* As someone who does not enjoy weight training, I want to find a different way of working out.
+* Users wanting a simple and easy to understand UI.
+
+* 
 
 ## Bug Report:
 
