@@ -103,11 +103,23 @@ Also consistent throughout the site is the footer. The footer is very basic and 
 
 ## Home page:
 
+As the landing page for the site, the home page is designed to grab the users attention and immediately invite them further into the site. It features a large heading and below a text box containing a short paragraph to inform the user of where they are as well as the sites purpose. Also in the text box is a button, with a colour and text meant to act as a call to action for the user to continue into the site.
+
+![](static/media)
+
 ## Membership pages:
 
-* Login / Sign up pages
+### Memberships page
 
-* Profile page 
+The memberships page is very simplistic in its design. Using template logic, the page generates a card for each membership option the gym has available. Each card features The name/type of membership, an image correlating with the membership and a button with text reading "Learn more >" prompting the user to investigate further into the site.
+
+### Membership Details page
+
+From the main membership page upon clicking the button on one of the cards, the user is brought to the membership details page for the membership they have chosen.
+
+## Login / Sign up pages:
+
+## Profile page: 
 
 ## Future Updates
 
@@ -156,6 +168,7 @@ I began testing the responsiveness of the site firstly by switching through diff
     * Users that have been going to the gym before this website was created, can now sign up to an account. Once the user is on the on the profile page, they can sign up for newsletters about current events and changes at the gym. Aswell as now being able to sign up to / renew their memberships.
 
 * Users wanting a simple and easy to understand UI.
+    * With so many over complex, and tricky to understand fitness websites and apps available to the user. This project places importance in keeping everything as streamlined and simple as possible. Upon landing on the site, the user is immediately greeted with the navigation menu and information about the gym. From there they are able to navigate around the site with clear labels/text on all buttons and links.
 
 * 
 
