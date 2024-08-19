@@ -15,3 +15,15 @@ def profile(request):
     }
 
     return render(request, 'profiles/profile.html', context)
+
+
+def maillist_signup(request):
+    """
+    Render the newsletter signup form
+    """
+
+    context = {
+        'user': request.user,
+    }
+
+    return render(request, 'profiles/newsletter_signup.html', context)
