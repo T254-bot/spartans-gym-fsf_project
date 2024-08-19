@@ -14,3 +14,10 @@ class Subscription(models.Model):
 
     def __str__(self):
         return self.user.username
+
+class Maillist(models.Model):
+    """
+    Create a mail list object
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    email = models.EmailField(max_length=254)
