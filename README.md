@@ -189,7 +189,8 @@ I began testing the responsiveness of the site firstly by switching through diff
     * Assuming the build encounters no errors, You will see a 'view app' button both at the top and bottom of the page
     * Click this button and the browser will navigate to the deployed app.
 
-![Site deployment]()
+![Site deployment](static/media/readme-assets/spartans-deployss.png)
+![Site deployment](static/media/readme-assets/spartans-deployss2.png)
 The live link can be found here - 
 
 # Credits
