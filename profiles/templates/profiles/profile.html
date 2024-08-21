@@ -55,6 +55,33 @@
 <div class="container-fluid mt-5">
     <div class="row">
         <div class="col text-shadow text-center">
+            <h1 class="montserrat-b text-white ">{% trans "Newsletter" %}</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Section to display mail list info  -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-10 col-md-8 col-lg-6 mx-auto">
+            <div class="card-body text-white p-3 mt-5 dg-bg">
+                    <div class="text-white">
+                        <p class="montserrat-b">Hello</p>
+                        <div class="text-center mt-3">
+                            <a class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" href="{% url 'maillist_signup' %}">Sign up</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col text-shadow text-center">
             <h1 class="montserrat-b text-white ">{% trans "Your Memberships" %}</h1>
         </div>
     </div>
