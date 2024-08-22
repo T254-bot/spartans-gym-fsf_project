@@ -40,8 +40,8 @@
     <div class="row">
         <div class="col-10 col-md-8 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
-                <h2 class="montserrat-b mb-5">{{ user.username}}</h2>
-                <h3 class="montserrat-b">{{ user.email }}</h3>
+                <p class="montserrat-b mb-5">{{ user.username}}</p>
+                <p class="montserrat-b">{{ user.email }}</p>
                 <div class="text-center mt-3">
                     <a class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" href="{% url 'account_change_password' %}">Change your Password</a>
                 </div>
@@ -55,7 +55,7 @@
 <div class="container-fluid mt-5">
     <div class="row">
         <div class="col text-shadow text-center">
-            <h1 class="montserrat-b text-white ">{% trans "Newsletter" %}</h1>
+            <h2 class="montserrat-b text-white ">{% trans "Newsletter" %}</h2>
         </div>
     </div>
 </div>
@@ -64,10 +64,13 @@
 
 <div class="container-fluid">
     <div class="row">
+        <div class="col text-shadow text-center">
+            <h2 class="montserrat-b text-white ">{% trans "Newsletter" %}</h2>
+        </div>
         <div class="col-10 col-md-8 col-lg-6 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
                     <div class="text-white">
-                        <p class="montserrat-b">Hello</p>
+                        <p class="montserrat-b big-text">email</p>
                         <div class="text-center mt-3">
                             <a class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" href="{% url 'maillist_signup' %}">Sign up</a>
                         </div>
@@ -77,31 +80,23 @@
     </div>
 </div>
 
-<!-- Header -->
-
-<div class="container-fluid mt-5">
-    <div class="row">
-        <div class="col text-shadow text-center">
-            <h1 class="montserrat-b text-white ">{% trans "Your Memberships" %}</h1>
-        </div>
-    </div>
-</div>
-
 <!-- Section to display users current memberships -->
 
-{% for subscription in subscriptions %}
     <div class="container-fluid">
         <div class="row">
+            <div class="col text-shadow text-center">
+                <h2 class="montserrat-b text-white ">{% trans "Your Memberships" %}</h2>
+            </div>
             <div class="col-10 col-md-8 col-lg-6 mx-auto">
+                {% for subscription in subscriptions %}
                 <div class="card-body text-white p-3 mt-5 dg-bg">
                         <div class="text-white">
                             <p class="montserrat-b">{{ subscription.membership }}</p>
                         </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-{% endfor %}
-
 
 {% endblock %}
