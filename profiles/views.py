@@ -8,10 +8,12 @@ def profile(request):
     """
 
     subscriptions = Subscription.objects.all()
+    maillist = Maillist.objects.all()
 
     context = {
         'user': request.user,
         'subscriptions': subscriptions,
+        'maillist' : maillist,
     }
 
     return render(request, 'profiles/profile.html', context)
