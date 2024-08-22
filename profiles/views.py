@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Subscription
+from django.shortcuts import render, redirect
+from .models import *
 
 
 def profile(request):
@@ -21,6 +21,13 @@ def maillist_signup(request):
     """
     Render the newsletter signup form
     """
+    if request.method == "POST":
+        user = request.user
+        email = request.POST.get('user_email')
+
+        Maillist.objects.create(user=user, email=email)
+
+        return redirect('profile')
 
     context = {
         'user': request.user,
