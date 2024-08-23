@@ -36,3 +36,11 @@ def maillist_signup(request):
     }
 
     return render(request, 'profiles/newsletter_signup.html', context)
+
+
+def maillist_update(request):
+    """
+    Render the newsletter update form
+    """
+
+    return render(request, 'profiles/newsletter_update.html')

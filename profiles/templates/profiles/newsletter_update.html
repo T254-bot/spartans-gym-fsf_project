@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Update Mail list Email" %}{% endblock %}
+
+{% block content %}
+
+<!-- Div to create top space on page -->
+
+<div class="container su-top-space"></div>
+
+<!-- Messages section -->
+
+{% if messages %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col text-shadow black-bg"></div>
+            <ul>
+                {% for message in messages %}
+                <li class="montserrat-b text-shadow text-white">{{message}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Page Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col text-shadow text-center">
+        <h1 class="montserrat-b text-white ">{% trans "Update Email" %}</h1>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up form -->
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-10 col-md-6 mx-auto">
+          <div class="card-body text-center p-3 mt-5 dg-bg">
+            <form method="POST" action="">
+              <!-- Form Inputs -->
+               {% csrf_token %}
+              <div>
+                <p>
+                  <input type="email" id="mlu_email" name="user_email"/>
+                </p>
+              </div>
+              <button class=" ms-4 rounded-3 text-white montserrat-b" type="submit" style="background-color:#C90404">{% trans "Update" %}</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Div to create bottom space on page -->
+
+<div class="container su-btm-space"></div>
+
+{% endblock %}
