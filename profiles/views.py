@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import *
 
 
@@ -42,5 +43,22 @@ def maillist_update(request):
     """
     Render the newsletter update form
     """
+    if request.method == 'POST':
+        new_email = request.POST.get('user_email')
+        if new_email:
+            request.user.email = new_email
+            request.user.save()
+            messages.success(request, 'Your email has been updated!')
+        return redirect('profile')
+
+    return render(request, 'profiles/newsletter_update.html')
+
+def maillist_delete(request):
+    """
+    Delete users email from mail list
+    """
+    user = request.user
+    maillist = Maillist.objects.all()
+
 
     return render(request, 'profiles/newsletter_update.html')
