@@ -71,6 +71,10 @@
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.big-text {
+    font-size: 20px;
+}
+
 /*----------------------------------------------------------- Home page */
 
 .main-header {
