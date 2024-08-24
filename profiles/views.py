@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import *
 
@@ -46,8 +46,10 @@ def maillist_update(request):
     if request.method == 'POST':
         new_email = request.POST.get('user_email')
         if new_email:
-            request.user.email = new_email
-            request.user.save()
+            # Assuming `MailList` has a foreign key to `User` as `user`
+            maillist_entry = get_object_or_404(Maillist, user=request.user)
+            maillist_entry.email = new_email
+            maillist_entry.save()
             messages.success(request, 'Your email has been updated!')
         return redirect('profile')
 
@@ -57,8 +59,11 @@ def maillist_delete(request):
     """
     Delete users email from mail list
     """
-    user = request.user
-    maillist = Maillist.objects.all()
+    if request.method == 'POST':
+        maillist_entry = get_object_or_404(Maillist, user=request.user)
 
+        maillist_entry.delete()
 
-    return render(request, 'profiles/newsletter_update.html')
+        messages.success(request, 'Your email has been removed from the Mail list')
+        return redirect('profile')
+    return redirect('profile')
