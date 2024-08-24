@@ -75,11 +75,15 @@ Here are my wireframes that I created at the start of my project and used as the
 
 My database ended up being very simplistic given how little data is required for the site. There are three Membership objects within created from the django model written in the required models.py file. Each of those objects contain the necessary data for the 3 options for classes/subscriptions. When a user selects and pays for one of the memberships, the currently logged in users object will grab the id from the chosen membership and place it into a list within the user object. By checking what numbers exist in said list, Django then knows what to display on the users Profile page. The project is currently in development at the time of writing this and any changes to this will be documented below. But for now this is the plan.
 
-The only CRUD actions accessible to the user are with the users profile itself. As given the nature of the site, it is not possible to allow them to create anything else as the only other data is static and should not be altered.
-
 ### The Data Schema:
 
+I have used drawsql to create this data schema. Due to the app being very strict on only using its pre set data types, and those on that list not correlating with what I believe to be the correct thing to put. Not all data types are accurate. However I have done my best to be as close as possible.
+
 ![Data schema screenshot](static/media/readme-assets/spartans-ds.png)
+
+Since writing this section of my readme, I have added to my site and it's database. To meet my projects requirements I needed to provide the full CRUD functionality I was given to believe allauth would take care of. And so decided on a Newsletter. Details of this will be found below in the Features section. Here I will briefly explain its part in my site data schema. The mailist object takes two pieces of data. The user object is used allowing the email address used for the newsletter sign up to be independent from the users email, yet still associated to the user who created it. I have connected the user column to the id of the user object in this screenshot, as I could not attach to the whole table.
+
+![Updated Data schema screenshot](static/media/readme-assets/spartans-ds2.png)
 
 # Features
 
@@ -146,16 +150,15 @@ I began testing the responsiveness of the site firstly by switching through diff
 * Samsung Internet (Android)
 * Safari 
 
-
 ## Validator results
 
 ### HTML Validator
 
-![HTML Validator results]()
+![HTML Validator results](static/media/readme-assets/spartans-html-valid.png)
 
 ### CSS Validator Results:
 
-![CSS validator results]()
+![CSS validator results](static/media/readme-assets/spartans-css-valid.png)
 
 ## Functionality Testing:
 
@@ -174,11 +177,9 @@ I began testing the responsiveness of the site firstly by switching through diff
 
 ## Bug Report:
 
-* The custom background images do not fill the entire screen on some devices. This is due to having set sizes based off of average screen sizes, and also using a div to separate the footer from main content on pages with less content. Which then causes the footer to go beyond the bottom of the image. This is something I am trying to fix but given time constraints I am unsure if I will get them all.
+* The custom background images do not fill the entire screen on some devices. This is due to having set sizes based off of average screen sizes, and also using a div to separate the footer from main content on pages with less content. Which then causes the footer to go beyond the bottom of the image. This is something I have done my best to correct however certain devices of unusual sizes will have broken styling. The main culprits I have identified are the IPad pro, Which has a very wide screen in portrait, causing it to display as it would on a desktop. 
 
 * Due to the outdated course material as well as the code along project not working correctly, I have used a different version of stripe payments than is used in the course. It has made acheiving a working payment system incredibly easy. However, getting the required functionality (i.e: A message to display to the user and having the membership show up in the user object) has been much more difficult this way. The bug here is that to redirect back to my site after completing payment, currently opens the site in the same window as the payment screen. This is something I am hopeful to resolve but given time constraints I doubt I will.
-
-* I am currently encountering an error where the divs I am using to space the page content out are not working correctly while on allauth pages.
 
 # Deployment
 
