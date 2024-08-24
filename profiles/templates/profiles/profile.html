@@ -9,7 +9,7 @@
 
 <!-- Div to create top space on page -->
 
-<div class="container md-top-space"></div>
+<div class="container p-top-space"></div>
 
 <!-- Messages section -->
 
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-10 col-md-8 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
-                <p class="montserrat-b mb-5">Username: {{ user.username}}</p>
+                <p class="montserrat-b mb-md-5">Username: {{ user.username}}</p>
                 <p class="montserrat-b">Email: {{ user.email }}</p>
                 <div class="text-center mt-3">
                     <a class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" href="{% url 'account_change_password' %}">Change your Password</a>
@@ -59,13 +59,12 @@
     <div class="row">
         <div class="col-10 col-md-8 col-lg-6 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
-                <div class="col text-shadow text-center">
-                    <h2 class="montserrat-b text-white ">{% trans "Newsletter" %}</h2>
-                </div>
-
                 {% if maillist %}
                     {% for item in maillist %}
                         {% if item.user == user %}
+                            <div class="col text-shadow text-center">
+                                <h2 class="montserrat-b text-white ">{% trans "Newsletter" %}</h2>
+                            </div>
                             <div class="text-white">
                                 <p class="montserrat-b big-text">Email: {{ item.email }}</p>
                             </div>
@@ -76,7 +75,8 @@
                                 <form method="POST" action="{% url 'maillist_delete' %}">
                                     {% csrf_token %}
                                     <div class="text-center mt-3">
-                                        <button type="submit" class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" onclick="return confirm('Are you sure you want to stop receiving newsletters?');">Delete Email</button>
+                                        <button type="submit" class="btn btn-outline-white text-white rounded-3 montserrat" style="background-color:#C90404" 
+                                        onclick="return confirm('Are you sure you want to stop receiving newsletters?');">Delete Email</button>
                                     </div> 
                                 </form>
                             </div>
@@ -106,7 +106,7 @@
         <div class="col-10 col-md-8 col-lg-6 mx-auto">
             <div class="card-body text-white p-3 mt-5 dg-bg">
                 <div class="text-shadow text-center">
-                    <h1 class="montserrat-b text-white ">{% trans "Your Memberships" %}</h1>
+                    <h3 class="montserrat-b text-white ">{% trans "Your Memberships" %}</h3>
                 </div>
                 {% for subscription in subscriptions %}
                 <div class="text-white">
@@ -120,6 +120,6 @@
 
 <!-- Div to create bottom space -->
 
-<div class="container md-btm-space"></div>
+<div class="container p-btm-space"></div>
 
 {% endblock %}

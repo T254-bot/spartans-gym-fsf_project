@@ -117,6 +117,14 @@
     margin-bottom: 5%;
 }
 
+.p-top-space {
+    margin-top: 7rem;
+}
+
+.p-btm-space {
+    margin-bottom: 5%;
+}
+
 .su-top-space {
     margin-top: 7rem;
 }
@@ -191,6 +199,14 @@
         margin-bottom: 45%;
     }
 
+    .p-top-space {
+        margin-top: 20%;
+    }
+    
+    .p-btm-space {
+        margin-bottom: 32.5%;
+    }
+
     .su-top-space {
         margin-top: 12.5rem;
     }
@@ -240,6 +256,14 @@
 
     .md-btm-space {
         margin-bottom: 20%;
+    }
+
+    .p-top-space {
+        margin-top: 8rem;
+    }
+    
+    .p-btm-space {
+        margin-bottom: 10%;
     }
 
     .su-btm-space {
