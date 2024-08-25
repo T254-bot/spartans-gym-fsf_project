@@ -40,7 +40,7 @@ This educational project has been developed with the intention of demonstrating 
 
 * Users wanting a simple and easy to understand UI.
 
-* 
+* Users wanting additional information about the gym.
 
 ## Color Scheme:
 
@@ -173,7 +173,7 @@ I began testing the responsiveness of the site firstly by switching through diff
 * Users wanting a simple and easy to understand UI.
     * With so many over complex, and tricky to understand fitness websites and apps available to the user. This project places importance in keeping everything as streamlined and simple as possible. Upon landing on the site, the user is immediately greeted with the navigation menu and information about the gym. From there they are able to navigate around the site with clear labels/text on all buttons and links.
 
-* 
+* Users wanting additional information about the gym.
 
 ## Bug Report:
 
