@@ -8,8 +8,8 @@ def profile(request):
     Display the user's profile
     """
 
-    subscriptions = Subscription.objects.all()
-    maillist = Maillist.objects.all()
+    subscriptions = Subscription.objects.filter(user=request.user.email)
+    maillist = Maillist.objects.filter(user=request.user)
 
     context = {
         'user': request.user,
