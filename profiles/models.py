@@ -9,8 +9,8 @@ class Subscription(models.Model):
     """
     Create a subscription object 
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    membership = models.OneToOneField(Membership, on_delete=models.CASCADE, null=True)
+    user = models.EmailField(max_length=254)
+    membership = models.CharField(max_length=254, default='')
 
     def __str__(self):
         return self.user.username
