@@ -26,14 +26,14 @@ def my_webhook_view(request):
   # Verify the signature
   try:
       event = stripe.Webhook.construct_event(
-          payload, sig_header, 'whsec_e81c157facb226ac295c338d1bb7266764687b7116613562049ebdc2d1e74eef'  #settings.STRIPE_WEBHOOK_SECRET
+          payload, sig_header, 'we_1PGnYRFBAbixHtgvAgeYGv13'  #settings.STRIPE_WEBHOOK_SECRET
       )
   except ValueError as e:
       # Invalid payload
-      return HttpResponse(status=407)
+      return HttpResponse(status=400)
   except stripe.error.SignatureVerificationError as e:
       # Invalid signature
-      return HttpResponse(status=408)
+      return HttpResponse(status=400)
 
   # Handle the event
   if event.type == 'payment_intent.succeeded':
