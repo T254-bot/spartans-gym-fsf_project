@@ -147,15 +147,15 @@ After discovering allauth would not achieve the site requirement of allowing ful
 
 ![Newsletter section screenshot *not signed up*](static/media/readme-assets/spartans-nl-ns.png)
 
-![Newsletter section screenshot]()
+![Newsletter section screenshot](static/media/readme-assets/spartans-nl.png)
 
-![Newsletter signup page screenshot]()
+![Newsletter signup page screenshot](static/media/readme-assets/spartans-nl-su.png)
 
 ### Memberships 
 
 At the bottom of the page, the user can find the "Your memberships" section. Which is a simple box containing a list of the subscriptions they are currently subscribed to if any. (This section will not appear if the user has not subscribed to any memberships)
 
-![Profile membership section screenshot]()
+![Profile membership section screenshot](static/media/readme-assets/spartans-pms.png)
 
 ## Login / Sign up pages:
 
