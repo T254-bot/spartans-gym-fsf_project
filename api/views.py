@@ -26,7 +26,7 @@ def my_webhook_view(request):
   # Verify the signature
   try:
       event = stripe.Webhook.construct_event(
-          payload, sig_header, 'we_1PGnYRFBAbixHtgvAgeYGv13'  #settings.STRIPE_WEBHOOK_SECRET
+          payload, sig_header, 'whsec_8BEZBfauUSKrRHFmp6LQKQRK1aDbONBG'  #settings.STRIPE_WEBHOOK_SECRET
       )
   except ValueError as e:
       # Invalid payload
