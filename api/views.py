@@ -43,12 +43,13 @@ def my_webhook_view(request):
     receipt_email = event['data']['object']['receipt_email']
 
     print('PaymentIntent was successful!')    
-    user = User.objects.get(email=receipt_email)
+    user = receipt_email
     print(user)
     product = Membership.objects.get(stripe_price=amount)
-    print(product)
+    product_name = product.name
+    print(product_name)
 
-    subscription = Subscription.objects.create(user=user, membership=product)
+    subscription = Subscription.objects.create(user=user, membership=product_name)
 
     messages.add_message(request, messages.INFO, "Payment was successful.")
   elif event.type == 'payment_method.attached':
