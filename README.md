@@ -137,9 +137,7 @@ Once the user has signed up/ logged into their account, they are able to access 
 
 ### Profile Details
 
-At the top of the page, the user is greeted with the heading "Your Profile". Informing them of where they are. And just below that, the details which they created their account with e.g: username and email. Aswell as a button with a text prompt, allowing the user to update their password. *SEE BUG REPORT*
-
-![Profile Details screenshot](static)
+At the top of the page, the user is greeted with the heading "Your Profile". Informing them of where they are. And just below that, the details which they created their account with e.g: username and email.
 
 ### Newsletter 
 
@@ -174,6 +172,8 @@ When the user wishes to logout of their account for whatever reason. They can na
 * The main plan for the future of the site would be to complete the newsletter functionality, allowing emails to be sent to the user to confirm their subscription to the newsletter has been successful. And the continue to send emails on a monthly basis.
 
 * A small thing I have elected to move over at this point given the short deadline I have to complete the project, Is the styling for the messages section. I have made sure it is visible to the user and somewhat uniform with the rest of the sites styling. However I did want to make it look a bit neater, but struggled deciding on a design that looked good, and how to implement it. 
+
+* The final piece of functionality I would plan to immediately implement, is the ability for the site to remove the subscription objects from the database after an alloted amount of time. When I briefly looked at implementing this at the start of the course. I found it to be abit of a tedious process that I wasn't sure I would be able to achieve. And also at that time the project was in its very early stages so I opted to continue with the site. However In a real world setting, this can easily be handled manually in the admin panel.
 
 # Testing
 
@@ -227,6 +227,8 @@ I began testing the responsiveness of the site firstly by switching through diff
 ## Bug Report:
 
 * The custom background images do not fill the entire screen on some devices. This is due to having set sizes based off of average screen sizes, and also using a div to separate the footer from main content on pages with less content. Which then causes the footer to go beyond the bottom of the image. This is something I have done my best to correct this problem with custom css margins at the top and bottom of most pages. However certain devices of unusual sizes will have broken styling. The main culprits I have identified are the IPad pro, Which has a very wide screen in portrait, causing it to display as it would on a desktop. 
+
+* No matter how hard I tried I could not manage to get the footer to stick to the bottom of the page when there is not enough content to push it all the way down. This is not noticeable on desktop. However it is persist across several pages on mobile and tablet. The custom css margins where made primarily to tackle this issue, however due to time constraints and the issues I have had with this project. I am nervous to continue messing with static files hosted within aws for fear of ruining everything after I have finally got the project to what I believe to be a passable standard. Despite the flaws with styling due to having to learn and remember so much all at once.
 
 * Due to the outdated course material as well as the code along project not working correctly, I have used a different version of stripe payments than is used in the course. It has made achieving a working payment system incredibly easy. However, getting the required functionality (i.e: A message to display to the user and having the membership show up in the user object) has been much more difficult this way. The bug here is that to redirect back to my site after completing payment, currently opens the site in the same window as the payment screen. This is something I am hopeful to resolve but given time constraints I doubt I will.
 
