@@ -83,7 +83,7 @@ I have used drawsql to create this data schema. Due to the app being very strict
 
 ![Data schema screenshot](static/media/readme-assets/spartans-ds.png)
 
-Since writing this section of my readme, I have added to my site and it's database. To meet my projects requirements I needed to provide the full CRUD functionality I was given to believe allauth would take care of. And so decided on a Newsletter. Details of this will be found below in the Features section. Here I will briefly explain its part in my site data schema. The mailist object takes two pieces of data. The user object is used allowing the email address used for the newsletter sign up to be independent from the users email, yet still associated to the user who created it. I have connected the user column to the id of the user object in this screenshot, as I could not attach to the whole table.
+* Since writing this section of my readme, I have added to my site and it's database. To meet my projects requirements I needed to provide the full CRUD functionality I was given to believe allauth would take care of. And so decided on a Newsletter. Details of this will be found below in the Features section. Here I will briefly explain its part in my site data schema. The mailist object takes two pieces of data. The user object is used allowing the email address used for the newsletter sign up to be independent from the users email, yet still associated to the user who created it. I have connected the user column to the id of the user object in this screenshot, as I could not attach to the whole table.
 
 ![Updated Data schema screenshot](static/media/readme-assets/spartans-ds2.png)
 
@@ -257,3 +257,10 @@ Barnaby is a family friend who works in the industry. He has been a pillar of su
 
 * Spartans Gym - Real world inspiration
 Finally a massive thank you to Spartans Gym. For not only allowing me to use their company and facility as the basis for my site. But also providing me with assets such as images and information to use as content.
+
+### Technologies used
+
+* Django Framework
+* Bootstrap Framework for styling
+* AWS for hosting static files
+* Heroku for hosting and deployment
