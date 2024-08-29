@@ -139,6 +139,8 @@ Once the user has signed up/ logged into their account, they are able to access 
 
 At the top of the page, the user is greeted with the heading "Your Profile". Informing them of where they are. And just below that, the details which they created their account with e.g: username and email.
 
+![Profile Details screenshot](static/media/readme-assets/spartans-pd.png)
+
 ### Newsletter 
 
 After discovering allauth would not achieve the site requirement of allowing full CRUD functionality. I decided to create a Mail list/ newsletter feature. That will allow the user (once signed in) to sign up an email, which can be separate to the email used for account sign up, to a mail list to receive monthly updates on the gym. Unfortunately given time constraints I was not able to achieve the functionality to send monthly emails. However the user still has full CRUD functionality available to them with what is currently available.
