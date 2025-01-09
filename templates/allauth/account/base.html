@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    {% if messages %}
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col text-shadow black-bg"></div>
+                <ul>
+                    {% for message in messages %}
+                    <li class="montserrat-b text-shadow text-white">{{message}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
     <div class="container header-container">
         <div class="overlay"></div>
         <div class="row">

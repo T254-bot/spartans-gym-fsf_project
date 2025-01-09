@@ -33,9 +33,11 @@ STRIPE_WEBHOOK_SECRET = os.environ.get('STRIPE_WEBHOOK_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['spartans-django-app-b21fba4983af.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+
+# ALLOWED_HOSTS = ['spartans-django-app-b21fba4983af.herokuapp.com']
 
 # Application definition
 
