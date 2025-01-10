@@ -89,21 +89,6 @@
     background-repeat: no-repeat;
 }
 
-/*----------------------------------------------------------- Sign up Page */
-
-.form-error ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.form-error li {
-    color: white;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
 /*----------------------------------------------------------- Margins */
 
 .top-space {
