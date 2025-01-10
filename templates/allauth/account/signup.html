@@ -47,17 +47,17 @@
           <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
             <!-- Form Inputs -->
             {% csrf_token %}
-            <p class="card-text text-white my-5 montserrat">{{ form.email }}
-              <div class="form-error">{{ form.email.errors }}</div>
+            <p class="card-text text-white my-4 montserrat">{{ form.email }}
+              <div class="text-white montserrat">{{ form.email.errors }}</div>
             </p>
-            <p class="card-text text-white my-5 montserrat">{{ form.username }}
-              <div class="form-error">{{ form.username.errors }}</div>
+            <p class="card-text text-white my-4 montserrat">{{ form.username }}
+              <div class="text-white montserrat">{{ form.username.errors }}</div>
             </p>
-            <p class="card-text text-white my-5 montserrat">{{ form.password1 }}
-              <div class="form-error">{{ form.password1.errors }}</div>
+            <p class="card-text text-white my-4 montserrat">{{ form.password1 }}
+              <div class="text-white montserrat">{{ form.password1.errors }}</div>
             </p>
-            <p class="card-text text-white my-5 montserrat">{{ form.password2 }}
-              <div class="form-error">{{ form.password2.errors }}</div>
+            <p class="card-text text-white my-4 montserrat">{{ form.password2 }}
+              <div class="text-white montserrat">{{ form.password2.errors }}</div>
             </p>
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
