@@ -9,7 +9,7 @@ def profile(request):
     """
 
     subscriptions = Subscription.objects.filter(user=request.user.email)
-    maillist = Maillist.objects.filter(user=request.user)
+    maillist = Maillist.objects.filter(user=request.user).first()
 
     context = {
         'user': request.user,
