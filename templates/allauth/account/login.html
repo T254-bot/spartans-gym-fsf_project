@@ -9,23 +9,8 @@
 
 <!-- Div to create top space on page -->
 
-<div class="container si-top-space"></div>
+<div class="container su-top-space"></div>
 
-<!-- Messages section -->
-
-{% if messages %}
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col text-shadow black-bg"></div>
-            <ul>
-                {% for message in messages %}
-                <li class="montserrat-b text-shadow text-white">{{message}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</div>
-{% endif %}
 
 <!-- Page Header -->
 
@@ -46,11 +31,32 @@
         <form class="login" method="POST" action="{% url 'account_login' %}">
           <!-- Form Inputs -->
           {% csrf_token %}
+          {% if form.errors %}
+          <div class="text-white montserrat">
+              <ul>
+                  <!-- Display non-field errors (e.g., '__all__') -->
+                  {% if form.non_field_errors %}
+                      {% for error in form.non_field_errors %}
+                          <li>{{ error }}</li>
+                      {% endfor %}
+                  {% endif %}
+                  
+                  <!-- Display field-specific errors -->
+                  {% for field, errors in form.errors.items %}
+                      {% if field != '__all__' %}
+                          <li>{{ errors }}</li>
+                      {% endif %}
+                  {% endfor %}
+              </ul>
+          </div>
+          {% endif %}
+          
           <p class="card-text text-white my-5 montserrat">
             {{ form.login }}
           </p>
           <p class="card-text text-white my-5 montserrat">
             {{form.password}}
+            <div class="text-white montserrat"></div>
           </p>
           <p class="card-text text-white my-5 montserrat">
             {{form.remember.label}}
