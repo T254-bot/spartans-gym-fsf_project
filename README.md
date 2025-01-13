@@ -175,6 +175,8 @@ When the user wishes to logout of their account for whatever reason. They can na
 
 * A small thing I have elected to move over at this point given the short deadline I have to complete the project, Is the styling for the messages section. I have made sure it is visible to the user and somewhat uniform with the rest of the sites styling. However I did want to make it look a bit neater, but struggled deciding on a design that looked good, and how to implement it. 
 
+* Another small thing I decided to leave given time constraints was making the email found in the footer a link which will take you to your email to contact the site, similar to on my previous projects. For now I have simply included the contact email as text.
+
 * The final piece of functionality I would plan to immediately implement, is the ability for the site to remove the subscription objects from the database after an alloted amount of time. When I briefly looked at implementing this at the start of the course. I found it to be abit of a tedious process that I wasn't sure I would be able to achieve. And also at that time the project was in its very early stages so I opted to continue with the site. However In a real world setting, this can easily be handled manually in the admin panel.
 
 # Testing
